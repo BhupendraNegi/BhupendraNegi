@@ -1,4 +1,7 @@
-👋 Hi, I’m Bhupendra Singh Negi
+
+### Hey there <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px">
+
+I’m Bhupendra Singh Negi
 
 🔭 I’m currently working with @elitmus, Bangalore as Full Stack Developer.
 
