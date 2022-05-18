@@ -3,7 +3,7 @@
 
 I’m Bhupendra Singh Negi
 
-🔭 I’m currently working with @elitmus, Bangalore as Full Stack Developer.
+🔭 I’m currently working with @Clearstack, Bangalore as Software Developer.
 
 
 👨🏾‍💻 Languages I love to code in
