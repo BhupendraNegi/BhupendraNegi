@@ -11,8 +11,9 @@ I’m Bhupendra Singh Negi
   * Javascript
   * C++
   * Python
+  * Java
   
-📫 How to reach me  on:
+📫 How to reach me:
 
 
 [![Linkedin](https://img.shields.io/badge/-LinkedIn-0073b1?style=social&logo=Linkedin&https://www.linkedin.com/in/bhupendranegi21/)](https://www.linkedin.com/in/bhupendranegi21/)
