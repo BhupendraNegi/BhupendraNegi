@@ -15,7 +15,6 @@ I’m Bhupendra Singh Negi
   
 📫 How to reach me:
 
-
 [![Linkedin](https://img.shields.io/badge/-LinkedIn-0073b1?style=social&logo=Linkedin&https://www.linkedin.com/in/bhupendranegi21/)](https://www.linkedin.com/in/bhupendranegi21/)
 [![Twitter](https://img.shields.io/twitter/follow/BhupendraNegi21?style=social)](https://twitter.com/BhupendraNegi21)
 [![GitHub](https://img.shields.io/github/followers/BhupendraNegi?label=follow&style=social)](https://github.com/BhupendraNegi)
@@ -23,7 +22,7 @@ I’m Bhupendra Singh Negi
 
 <!-- [![Bhupendra's GitHub stats](https://github-readme-stats.vercel.app/api?username=BhupendraNegi&show_icons=true&theme=radical)](https://github.com/anuraghazra/github-readme-stats) -->
 
-[![Top Langs](https://github-readme-stats-a5n66i210-zonito.vercel.app/api/top-langs/?username=BhupendraNegi&layout=donut&stats_format=bytes)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=BhupendraNegi&layout=donut&stats_format=bytes)](https://github.com/anuraghazra/github-readme-stats)
 
 <!---
 BhupendraNegi/BhupendraNegi is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
