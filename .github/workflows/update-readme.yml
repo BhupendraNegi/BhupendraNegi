@@ -14,10 +14,16 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Generate Top Languages Card
-        uses: anuraghazra/github-readme-stats@latest
-        with:
-          username: BhupendraNegi
-          count_private: true
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Fetch Top Languages SVG
+        run: |
+          mkdir -p github-readme-stats
+          curl -s "https://github-readme-stats.vercel.app/api/top-langs/?username=BhupendraNegi&layout=donut&count_private=true" \
+            -o github-readme-stats/top-langs.svg
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add github-readme-stats/top-langs.svg
+          git diff --cached --quiet || git commit -m "chore: update top languages card"
+          git push
