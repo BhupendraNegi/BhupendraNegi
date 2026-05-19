@@ -1,0 +1,23 @@
+name: Update README Stats
+
+on:
+  schedule:
+    - cron: '0 */12 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Generate Top Languages Card
+        uses: anuraghazra/github-readme-stats@latest
+        with:
+          username: BhupendraNegi
+          count_private: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
