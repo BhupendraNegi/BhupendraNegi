@@ -23,7 +23,7 @@ I’m Bhupendra Singh Negi
 <!-- [![Bhupendra's GitHub stats](https://github-readme-stats.vercel.app/api?username=BhupendraNegi&show_icons=true&theme=radical)](https://github.com/anuraghazra/github-readme-stats) -->
 
 
-![Top Langs](./github-readme-stats/top-langs.svg)
+[![Top Langs](https://github-readme-stats-bhupendranegis-projects.vercel.app/api/top-langs/?username=BhupendraNegi&layout=donut&count_private=true)](https://github.com/BhupendraNegi)
 
 <!---
 BhupendraNegi/BhupendraNegi is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
