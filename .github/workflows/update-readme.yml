@@ -17,7 +17,7 @@ jobs:
       - name: Fetch Top Languages SVG
         run: |
           mkdir -p github-readme-stats
-          curl -s "https://github-readme-stats.vercel.app/api/top-langs/?username=BhupendraNegi&layout=donut&count_private=true" \
+          curl -s "https://github-readme-stats-bhupendranegis-projects.vercel.app/api/top-langs/?username=BhupendraNegi&layout=donut&count_private=true" \
             -o github-readme-stats/top-langs.svg
 
       - name: Commit and push if changed
