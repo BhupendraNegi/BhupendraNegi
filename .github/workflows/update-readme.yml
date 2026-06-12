@@ -19,20 +19,20 @@ jobs:
           mkdir -p github-readme-stats
           curl -s \
             -H "x-vercel-protection-bypass: ${{ secrets.VERCEL_BYPASS_TOKEN }}" \
-            "https://github-readme-stats-bhupendranegis-projects.vercel.app/api/top-langs/?username=BhupendraNegi&layout=donut&count_private=true&hide=html,css,c%2B%2B" \
+            "https://github-readme-stats-bhupendranegis-projects.vercel.app/api/top-langs/?username=BhupendraNegi&layout=donut&count_private=true&hide=html,css,c%2B%2B&theme=tokyonight&hide_border=true" \
             -o github-readme-stats/top-langs.svg
 
       - name: Fetch GitHub Stats SVG
         run: |
           curl -s \
             -H "x-vercel-protection-bypass: ${{ secrets.VERCEL_BYPASS_TOKEN }}" \
-            "https://github-readme-stats-bhupendranegis-projects.vercel.app/api?username=BhupendraNegi&show_icons=true&include_all_commits=true&count_private=true&hide=html,css,c%2B%2B,c%2B" \
+            "https://github-readme-stats-bhupendranegis-projects.vercel.app/api?username=BhupendraNegi&show_icons=true&include_all_commits=true&count_private=true&hide=html,css,c%2B%2B,c%2B&theme=tokyonight&hide_border=true" \
             -o github-readme-stats/stats.svg
 
       - name: Fetch GitHub Streak SVG
         run: |
           curl -s \
-            "https://github-readme-streak-stats-clone-chi.vercel.app?user=BhupendraNegi" \
+            "https://github-readme-streak-stats-clone-chi.vercel.app?user=BhupendraNegi&theme=tokyonight&hide_border=true" \
             -o github-readme-stats/streak.svg
 
       - name: Commit and push if changed
