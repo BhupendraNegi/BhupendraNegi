@@ -20,7 +20,12 @@ I’m Bhupendra Singh Negi
 [![GitHub](https://img.shields.io/github/followers/BhupendraNegi?label=follow&style=social)](https://github.com/BhupendraNegi)
 
 
-![Bhupendra's GitHub stats](./github-readme-stats/stats.svg)
+
+
+
+![GitHub stats](./github-readme-stats/stats.svg)
+
+![GitHub Streak](./github-readme-stats/streak.svg)
 
 ![Top Langs](./github-readme-stats/top-langs.svg)
 

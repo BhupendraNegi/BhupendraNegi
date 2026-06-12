@@ -2,7 +2,7 @@ name: Update README Stats
 
 on:
   schedule:
-    - cron: '0 */12 * * *'
+    - cron: '30 15 * * *'  # 9:00 PM IST daily (IST = UTC+5:30)
   workflow_dispatch:
 
 jobs:
@@ -19,20 +19,26 @@ jobs:
           mkdir -p github-readme-stats
           curl -s \
             -H "x-vercel-protection-bypass: ${{ secrets.VERCEL_BYPASS_TOKEN }}" \
-            "https://github-readme-stats-bhupendranegis-projects.vercel.app/api/top-langs/?username=BhupendraNegi&layout=donut&count_private=true&hide=html,css,c++" \
+            "https://github-readme-stats-bhupendranegis-projects.vercel.app/api/top-langs/?username=BhupendraNegi&layout=donut&count_private=true&hide=html,css,c%2B%2B" \
             -o github-readme-stats/top-langs.svg
 
       - name: Fetch GitHub Stats SVG
         run: |
           curl -s \
             -H "x-vercel-protection-bypass: ${{ secrets.VERCEL_BYPASS_TOKEN }}" \
-            "https://github-readme-stats-bhupendranegis-projects.vercel.app/api?username=BhupendraNegi&show_icons=true&include_all_commits=true&count_private=true" \
+            "https://github-readme-stats-bhupendranegis-projects.vercel.app/api?username=BhupendraNegi&show_icons=true&include_all_commits=true&count_private=true&hide=html,css,c%2B%2B,c%2B" \
             -o github-readme-stats/stats.svg
+
+      - name: Fetch GitHub Streak SVG
+        run: |
+          curl -s \
+            "https://github-readme-streak-stats-clone-chi.vercel.app?user=BhupendraNegi" \
+            -o github-readme-stats/streak.svg
 
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add github-readme-stats/top-langs.svg github-readme-stats/stats.svg
+          git add github-readme-stats/top-langs.svg github-readme-stats/stats.svg github-readme-stats/streak.svg
           git diff --cached --quiet || git commit -m "chore: update top languages card"
           git push
