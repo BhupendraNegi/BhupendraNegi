@@ -19,13 +19,20 @@ jobs:
           mkdir -p github-readme-stats
           curl -s \
             -H "x-vercel-protection-bypass: ${{ secrets.VERCEL_BYPASS_TOKEN }}" \
-            "https://github-readme-stats-bhupendranegis-projects.vercel.app/api/top-langs/?username=BhupendraNegi&layout=donut&count_private=true" \
+            "https://github-readme-stats-bhupendranegis-projects.vercel.app/api/top-langs/?username=BhupendraNegi&layout=donut&count_private=true&hide=html,css,c++" \
             -o github-readme-stats/top-langs.svg
+
+      - name: Fetch GitHub Stats SVG
+        run: |
+          curl -s \
+            -H "x-vercel-protection-bypass: ${{ secrets.VERCEL_BYPASS_TOKEN }}" \
+            "https://github-readme-stats-bhupendranegis-projects.vercel.app/api?username=BhupendraNegi&show_icons=true&include_all_commits=true&count_private=true" \
+            -o github-readme-stats/stats.svg
 
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add github-readme-stats/top-langs.svg
+          git add github-readme-stats/top-langs.svg github-readme-stats/stats.svg
           git diff --cached --quiet || git commit -m "chore: update top languages card"
           git push
