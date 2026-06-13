@@ -2,7 +2,7 @@ name: Update README Stats
 
 on:
   schedule:
-    - cron: '30 15 * * *'  # 9:00 PM IST daily (IST = UTC+5:30)
+    - cron: '0 */12 * * *'  # every 12 hours
   workflow_dispatch:
 
 jobs:
@@ -31,9 +31,12 @@ jobs:
 
       - name: Fetch GitHub Streak SVG
         run: |
+          # The clone intermittently prepends PHP deprecation warnings before
+          # the SVG, so strip everything before the first <svg tag.
           curl -s \
             "https://github-readme-streak-stats-clone-chi.vercel.app?user=BhupendraNegi&theme=tokyonight&hide_border=true" \
-            -o github-readme-stats/streak.svg
+            | perl -0pe 's/^.*?(<svg)/$1/s' \
+            > github-readme-stats/streak.svg
 
       - name: Commit and push if changed
         run: |
