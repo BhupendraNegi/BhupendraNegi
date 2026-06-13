@@ -1,12 +1,10 @@
 <div align="center">
 
-# Hey there 👋 I'm Bhupendra Singh Negi <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35" />
+# Hey there <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35" /> It's Bhupendra
 
 <a href="https://github.com/BhupendraNegi">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&pause=1000&center=true&vCenter=true&width=460&lines=Software+Developer+%40+Clearstack;Ruby+on+Rails+%2B+JavaScript+Developer;Always+building%2C+always+learning" alt="Typing intro" />
 </a>
-
-<img src="https://komarev.com/ghpvc/?username=BhupendraNegi&style=for-the-badge&color=blueviolet" alt="Profile views" />
 
 </div>
 
@@ -47,6 +45,9 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logoColor=white)](https://www.linkedin.com/in/bhupendranegi21/)
 [![Twitter](https://img.shields.io/badge/Follow-%40BhupendraNegi21-1DA1F2?style=for-the-badge&logo=x&logoColor=white)](https://twitter.com/BhupendraNegi21)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/BhupendraNegi)
+
+</br>
+<img src="https://komarev.com/ghpvc/?username=BhupendraNegi&style=for-the-badge&color=blueviolet" alt="Profile views" />
 
 </div>
 
