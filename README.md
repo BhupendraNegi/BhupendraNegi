@@ -54,6 +54,17 @@ Work I've shipped that took more thought than it looks like it did:
 
 I write about Rails upgrades, deploying with Kamal, secrets management with SOPS, and backend architecture — [bhupendranegi.github.io/blog](https://bhupendranegi.github.io/blog)
 
+## 📊 GitHub Stats
+
+<div align="center">
+
+  <img src="./github-readme-stats/top-langs.svg" alt="Top languages" />
+  </br>
+  <img src="./github-readme-stats/streak.svg" height="170" alt="GitHub streak" />
+  <img src="./github-readme-stats/stats.svg" height="170" alt="GitHub stats" />
+
+</div>
+
 ## 🤝 Connect With Me
 
 <div align="center">
